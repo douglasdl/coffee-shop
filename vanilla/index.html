@@ -1,0 +1,90 @@
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <div id="page-container">
+    <div id="buttons-container">
+      <button id="coffee" onclick="askCoffee()">
+        <span>
+          Coffee
+        </span>
+        <span>
+          480 yen
+        </span>
+        <div id="coffee-count" class="balloon">
+          0
+        </div>
+      </button>
+      
+      <button id="tea" onclick="askTea()">
+        <span>
+          Tea
+        </span>
+        <span>
+          280 yen
+        </span>
+        <div id="tea-count" class="balloon">
+          0
+        </div>
+      </button>
+      
+      <button id="milk" onclick="askMilk()">
+        <span>
+          Milk
+        </span>
+        <span>
+          180 yen
+        </span>
+        <div id="milk-count" class="balloon">
+          0
+        </div>
+      </button>
+      
+      <button id="coke" onclick="askCoke()">
+        <span>
+          Coke
+        </span>
+        <span>
+          190 yen
+        </span>
+        <div id="coke-count" class="balloon">
+          0
+        </div>
+      </button>
+      
+      <button id="beer" onclick="askBeer()">
+        <span>
+          Beer
+        </span>
+        <span>
+          580 yen
+        </span>
+        <div id="beer-count" class="balloon">
+          0
+        </div>
+      </button>
+    </div>
+
+    <div id="bill">
+      <header>
+        <span>Your bill</span>
+      </header>
+      <div id="items-ordered">
+        Items ordered: 
+        <span id="count">0</span>
+      </div>
+      <div id="total-price">
+        Total Price: 
+        <span id="price">0</span> 
+        <span>yen</div>
+      <div>
+    </div>
+</body>
+</html>

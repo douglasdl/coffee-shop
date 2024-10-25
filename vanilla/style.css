@@ -1,0 +1,85 @@
+body {
+  background-color: #FCFCFF;
+  font-size: 0.75rem;
+}
+  
+#page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: #FCFCF6;
+}
+
+.balloon {
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  background-color: #E24E3E;
+  border-radius: 100%;
+  color: white;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+#bill {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFF;
+  box-shadow: #00000099 0 0 10px 1px;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 10rem;
+  gap: 1rem;
+}
+
+header {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#items-ordered {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+#total-price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+#count {
+  text-align: right;
+}
+
+#price {
+  text-align: right;
+  width: 20%;
+}
